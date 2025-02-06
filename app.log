@@ -1,0 +1,24 @@
+2025-02-06 19:18:59,784 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.31:5000
+2025-02-06 19:18:59,784 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-06 19:18:59,791 - INFO -  * Restarting with stat
+2025-02-06 19:19:07,913 - WARNING -  * Debugger is active!
+2025-02-06 19:19:07,957 - INFO -  * Debugger PIN: 390-525-989
+2025-02-06 19:19:10,716 - INFO - Processing query: deep learning in education
+2025-02-06 19:19:10,890 - INFO - Found 5 relevant papers
+2025-02-06 19:19:10,890 - INFO - 127.0.0.1 - - [06/Feb/2025 19:19:10] "POST /predict HTTP/1.1" 200 -
+2025-02-06 19:22:57,009 - INFO - Processing query: deep learning in transport
+2025-02-06 19:22:57,097 - INFO - Found 5 relevant papers
+2025-02-06 19:22:57,099 - INFO - 127.0.0.1 - - [06/Feb/2025 19:22:57] "POST /predict HTTP/1.1" 200 -
+2025-02-06 19:23:43,148 - INFO - Processing query: deep learning in education and healthcare
+2025-02-06 19:23:43,250 - INFO - Found 5 relevant papers
+2025-02-06 19:23:43,252 - INFO - 127.0.0.1 - - [06/Feb/2025 19:23:43] "POST /predict HTTP/1.1" 200 -
+2025-02-06 19:31:58,564 - INFO - Processing query: Blockchain applications
+2025-02-06 19:31:58,710 - INFO - Found 5 relevant papers
+2025-02-06 19:31:58,713 - INFO - 127.0.0.1 - - [06/Feb/2025 19:31:58] "POST /predict HTTP/1.1" 200 -
+2025-02-06 19:33:10,708 - INFO -  * Detected change in 'C:\\Users\\patil\\sem7proj\\Research_GPT\\app.py', reloading
+2025-02-06 19:33:11,881 - INFO -  * Restarting with stat
+2025-02-06 19:33:22,361 - WARNING -  * Debugger is active!
+2025-02-06 19:33:22,383 - INFO -  * Debugger PIN: 390-525-989
