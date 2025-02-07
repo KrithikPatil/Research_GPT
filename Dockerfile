@@ -16,6 +16,9 @@ RUN python -m venv research_gpt
 # Activate the virtual environment and install dependencies
 RUN /bin/bash -c "source /Research_GPT/research_gpt/bin/activate && pip install --no-cache-dir -r requirements.txt"
 
+# Step 7: Set environment variable to use the virtual environment
+ENV PATH="/Research_GPT/research_gpt/bin:$PATH"
+
 # Copy the current directory contents into the container at /app
 COPY . .
 
