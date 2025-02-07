@@ -32,5 +32,13 @@ jobs:
 
     - name: Deploy to Render
       run: |
-        curl -X POST https://api.onrender.com/v1/services/${{secrets.RESEARCH_GPT_SERVICE_ID}}/deploy \
-          -H "Authorization: Bearer ${{ secrets.ONRENDER_API_KEY }}"
+        curl --request POST \
+            --url https://api.render.com/v1/services/${{secrets.RESEARCH_GPT_SERVICE_ID }}/deploys \
+            --header 'accept: application/json' \
+            --header 'authorization: Bearer ${{ secrets.ONRENDER_API_KEY }}' \
+            --header 'content-type: application/json' \
+            --data '
+        {
+          "clearCache": "do_not_clear"
+        }
+        '
