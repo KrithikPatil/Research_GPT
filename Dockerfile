@@ -13,8 +13,8 @@ RUN pip install --no-cache-dir virtualenv
 # Create a virtual environment named research_gpt
 RUN python -m venv research_gpt
 
-# Activate the virtual environment and install the dependencies into it
-RUN . /research_gpt/bin/activate && pip install --no-cache-dir -r requirements.txt
+# Activate the virtual environment and install dependencies
+RUN /bin/bash -c "source /Research_GPT/research_gpt/bin/activate && pip install --no-cache-dir -r requirements.txt"
 
 # Copy the current directory contents into the container at /app
 COPY . .
@@ -26,4 +26,4 @@ EXPOSE 8000
 ENV KMP_DUPLICATE_LIB_OK='True'
 
 # Run the application using the virtual environment (activated environment)
-CMD ["/research_gpt/bin/python", "app.py"]
+CMD ["python", "app.py"]
