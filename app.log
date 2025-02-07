@@ -22,3 +22,26 @@
 2025-02-06 19:33:11,881 - INFO -  * Restarting with stat
 2025-02-06 19:33:22,361 - WARNING -  * Debugger is active!
 2025-02-06 19:33:22,383 - INFO -  * Debugger PIN: 390-525-989
+2025-02-06 19:34:12,422 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.31:8000
+2025-02-06 19:34:12,422 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-06 19:34:12,422 - INFO -  * Restarting with stat
+2025-02-06 19:34:19,384 - WARNING -  * Debugger is active!
+2025-02-06 19:34:19,415 - INFO -  * Debugger PIN: 390-525-989
+2025-02-06 19:34:23,886 - INFO - Processing query: Blockchain applications
+2025-02-06 19:34:24,234 - INFO - Found 5 relevant papers
+2025-02-06 19:34:24,234 - INFO - 127.0.0.1 - - [06/Feb/2025 19:34:24] "POST /predict HTTP/1.1" 200 -
+2025-02-06 19:56:20,807 - INFO - Processing query: Machine learning in healthcare
+2025-02-06 19:56:20,901 - INFO - Found 5 relevant papers
+2025-02-06 19:56:20,903 - INFO - 127.0.0.1 - - [06/Feb/2025 19:56:20] "POST /predict HTTP/1.1" 200 -
+2025-02-06 19:58:16,798 - INFO - Processing query: Blockchain
+2025-02-06 19:58:16,879 - INFO - Found 5 relevant papers
+2025-02-06 19:58:16,879 - INFO - 127.0.0.1 - - [06/Feb/2025 19:58:16] "POST /predict HTTP/1.1" 200 -
+2025-02-06 19:59:05,662 - INFO - Processing query: Deep learning in education
+2025-02-06 19:59:05,755 - INFO - Found 5 relevant papers
+2025-02-06 19:59:05,757 - INFO - 127.0.0.1 - - [06/Feb/2025 19:59:05] "POST /predict HTTP/1.1" 200 -
+2025-02-06 19:59:27,766 - INFO - Processing query: Deep learning in education
+2025-02-06 19:59:27,846 - INFO - Found 5 relevant papers
+2025-02-06 19:59:27,846 - INFO - 127.0.0.1 - - [06/Feb/2025 19:59:27] "POST /predict HTTP/1.1" 200 -
