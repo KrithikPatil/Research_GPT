@@ -31,12 +31,12 @@ def load_resources():
     """
     try:
         # Load the DistilBERT model and tokenizer
-        MODEL_PATH = "./distilbert_model"
+        MODEL_PATH = "./Research_GPT/distilbert_model"
         model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
         tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
 
         # Load the FAISS index
-        FAISS_INDEX_PATH = "./faiss_index.index"
+        FAISS_INDEX_PATH = "./Research_GPT/faiss_index.index"
         faiss_index = faiss.read_index(FAISS_INDEX_PATH)
 
         # Load the dataset
