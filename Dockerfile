@@ -7,17 +7,15 @@ WORKDIR /Research_GPT
 # Copy the requirements file into the container
 COPY requirements.txt .
 
-# Install virtualenv (to create a virtual environment)
-RUN pip install --no-cache-dir virtualenv
-
-# Create a virtual environment named research_gpt
-RUN python -m venv research_gpt
+RUN pip install --no-cache-dir virtualenv && python -m venv research_gpt
 
 # Activate the virtual environment and install dependencies
 RUN /bin/bash -c "source /Research_GPT/research_gpt/bin/activate && pip install --no-cache-dir -r requirements.txt"
 
 # Step 7: Set environment variable to use the virtual environment
 ENV PATH="/Research_GPT/research_gpt/bin:$PATH"
+
+COPY distilbert_model faiss_index.index processed_springer_papers_DL.json /Research_GPT/
 
 # Copy the current directory contents into the container at /app
 COPY . .
